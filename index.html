@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <section class="app-header">
+            <div class="title">
+                <img id="parrot" src="./assets/parrot.png" alt="an image of a parrot"/>
+                <div class="header-tile">
+                    <div class="app-name">PollyGlot</div>
+                    <div class="app-sub-name">Perfect Translation Every Time</div>
+                </div>
+            </div>
+        </section>
+        <section class="app-body">
+            <div class="to-translate">
+                <div class="to-translate-title-text">Text to translate 👇</div>
+                <textarea class="user-input" placeholder="How are you?"></textarea>
+            </div>
+            <div class="to-select">
+                <div class="to-select-title">Select language 👇</div>
+                <div class="languages-list">
+                    <div class="language" id="france">
+                        <input type="radio" class="user-input-lang" id="fr-btn" name="language" value="french" />
+                        <label for="fr-btn">French<img src="./assets/fr-flag.png"/></label>
+                    </div>
+                    <div class="language" id="spain">
+                        <input type="radio" id="sp-btn" class="user-input-lang" name="language" value="spanish" />
+                        <label for="sp-btn">Spanish<img src="./assets/sp-flag.png"/></label>
+                    </div>
+                    <div class="language" id="japan">
+                        <input type="radio" id="jpn-btn" class="user-input-lang" name="language" value="japanese" />
+                        <label for="jpn-btn">Japanese<img src="./assets/jpn-flag.png"/></label>
+                    </div>
+                </div>
+            </div>
+            <button class="translate-btn">Translate</button>
+        </section>
+        
+        <script src="main.js" type="module"></script>
+    </body>
+</html>
